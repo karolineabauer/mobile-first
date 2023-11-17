@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* nulstiller default styles og styling af body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/*Navbar begynder her */ 
+nav {
+    background-color: #D2DCCA;
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    color: #293D23;
+    padding: 1em;
+    width: 100%;
+    font-size: 12px;
+}
+
+label.logo {
+    color:#293D23;
+    font-size: 4vw;
+    line-height: 10vw;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Calistoga', serif;
+}
+
+
+nav ul {
+    display: flex;
+   justify-content: space-evenly;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'PT Serif', serif ;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'PT Serif', serif;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    z-index: 1000;
+}
+
+ul li {
+    display:  inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 13px;
+    color: #D2DCCA;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown {
+    display: block;
+    background: #D2DCCA;
+    margin: -15px -30px;
+
+}
+
+ul li ul.dropdown {
+    width: auto;
+    position: absolute;
+    z-index: 1000;
+    display: none
+
+}
+
+ul li a:hover {
+    color:#F8F6F5;
+
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+     
+}
+
+
+/* Styling af footer */
+.footer {
+    background-color: #D2DCCA;
+    padding: 40px;
+    text-align: center;
+    color: #4b4c4d;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social a {
+    font-size: 24px;
+    color: #243D20;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.social a:hover {
+    color: grey;
+    opacity: 0.9;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #4b4c4d;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: #f8f6f5;
+}
+
+
+/* styling af main */
+main {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* styling af h1 */
+h1{
+    color: #243D20;
+    font-size: 7vw;
+}
+
+/* styling af h2 */
+h2 {
+    color: #243D20;
+    font-weight: 50;
+    font-size: 3.5vw;
+}
+
+/* styling af container (alle boxe) */
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* styling af hver sæt boxe */
+.box-pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    width: 100%;
+    border: 1px solid #243D20;
+}
+
+/* styling af border af container i hver box */
+.box-h3 {
+    position: relative;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+}
+
+/* styling af billeder i hver box */
+.box-h3 img {
+    max-width: 70%;
+    height: auto;
+    display: flexbox;
+    margin: 15%;
+}
+
+/* styling af alt tekst inde i boksen */
+.text-container {
+    background-color: #f8f6f5;
+    padding: 10px;
+    position: relative;
+    top: -1px;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+/* styling af overskrift i box */
+h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #243D20;
+    text-align: center;
+}
+
+/* styling af paragraf i box */
+p {
+    margin: 8px 0; 
+    margin-left: 5%;
+    font-size: 1.2em;
+    color: #243D20;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+/* hover effekt af baggrunden i boxen */
+.box-h3:hover {
+    background-color: #D3DCCA; 
+    transition: background-color 0.3s ease; 
+}
+
+
+
+/* Styling af footer */
+.footer {
+    background-color: #D2DCCA;
+    padding: 40px;
+    text-align: center;
+    color: #4b4c4d;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social a {
+    font-size: 24px;
+    color: #243D20;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.social a:hover {
+    color: grey;
+    opacity: 0.9;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #4b4c4d;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: #f8f6f5;
+}
+
+
+
+   
+
+
+
+/* Første breakpoint. Her har vi taget udgangspunkt i en iphone 15 som har målene 393px * 852px. */
+/* Responsive adjustments */
+@media screen and (max-width:393px) {
+
+
+        .container {
+            padding: 0;
+        }
+
+        section {
+            margin-top: 0;
+        }
+
+        .footer {
+            padding: 20px; 
+            height: auto; 
+            margin: 0 0;
+        }
+    
+        .footer ul {
+            text-align: center;
+        }
+    
+        .footer ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-h3 {
+            width: 100%;
+        }
+
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        label.logo{
+            font-size: 5vw;
+            padding-left: 50px;
+    }
+    
+    .checkbtn{
+        display: block;
+        
+    }
+    .navbar-ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#D2DCCA;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    
+    nav a:hover {
+        transform: scale(1.2);
+      }
+      
+    
+    nav ul li {
+    display:block;
+    margin: -150px 0px;
+    top: -120px;
+    line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+        
+    }
+    a:hover, a.active {
+        background: none;
+        color: black;
+    } 
+    #check:checked ~ul {
+    left: 0
+    }
+    }
+
+/* responsive på mindre skærme, her har vi gjort så enheder under 1024px ser 1 burger af gangen. Hvor enheder over får vist 2 burgere istedet */
+@media screen and (min-width: 394px) and (max-width: 1024px) {
+    .container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2304px) {
+
+}
+
+
+
+
+@media screen and (min-width: 2305px) {
+
+}
+    

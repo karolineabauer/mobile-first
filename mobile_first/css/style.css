@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f8f6f5;
+}
+
+/*Navbar begynder her */ 
+nav {
+    background-color: #D2DCCA;
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    color: #293D23;
+    padding: 1em;
+    width: 100%;
+    font-size: 12px;
+}
+
+label.logo {
+    color:#293D23;
+    font-size: 4vw;
+    line-height: 10vw;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Calistoga', serif;
+}
+
+
+nav ul {
+    display: flex;
+   justify-content: space-evenly;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'PT Serif', serif ;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'PT Serif', serif;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    z-index: 1000;
+}
+
+ul li {
+    display:  inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 13px;
+    color: #D2DCCA;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown {
+    display: block;
+    background: #D2DCCA;
+    margin: -15px -30px;
+
+}
+
+ul li ul.dropdown {
+    width: auto;
+    position: absolute;
+    z-index: 1000;
+    display: none
+
+}
+
+ul li a:hover {
+    color:#F8F6F5;
+
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+     
+}
+
+/* Header begynder 
+her */
+/* Sætter mit billede til relativ */ 
+.billede-container {
+    position: relative;
+}
+
+/* Sætter mit overlay tekst til absolute så det kan komme ovenpå billedet. */ 
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D2DCCA;
+    font-size: 4vw;
+    text-align: center;
+    font-family:'Calistoga', serif;
+ 
+}
+
+/* Styler mit forside billede, så det fylder hele skærmen, samt sætter højden til auto så det forbliver i billedets oprindelige størrelse */
+.forside-billede {
+    width: 100%;
+    height: 40vw;
+}
+
+/* Styler min overlay cirkel. Både størrelse, placering og farve. */ 
+.overlay-circle {
+    position: absolute;
+    bottom: -5vw;
+    right: 8vw;
+    width: 13vw;
+    height: 13vw;
+    background-color: #293D23;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styler teksten i cirkel, sætter farven til lys grøn, ændre størrelsen på skriften samt at teksten skal være i midten. */
+.circle-text {
+    color: #D2DCCA;
+    text-align: center;
+    margin: 0;
+    font-size: 2.4vw;
+    font-family: 'PT Serif', serif;
+}
+
+
+/* Article begynder her */ 
+/* Ændre tekst størrelsen til 1.1rem. Sætter font-weigth til lighter, da kun "Mr. Mums skal stå med fed skrift". Derefter ændre jeg margin left til 2.5rem så teksten rykked ind. Det samme modsat. */
+h2 {
+    font-size: 4vw;
+    font-weight: lighter;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'PT Serif', serif;
+    margin-top: 5vw;
+}
+
+/* Ændre tekst størrelsen samt ændre margin. Så det er ens med overskfiten */
+.article-tekst {
+    font-size: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+    font-family: 'PT Serif', serif;
+}
+
+article {
+    background-color: #f8f6f5;
+}
+
+/* Main begynder her */ 
+main {
+    background-color: #f8f6f5;
+}
+.tale-boble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    margin-left: 61.1vw;
+    padding: 5vw;
+    border-radius: 25%;
+    font-size: 2vw;
+    width: 30.5vw;
+    height: 12vw;
+    font-family: 'PT Serif', serif;
+  }
+  
+  .tale-boble::before {
+    content: '';
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    bottom: 0.5%;
+    border: 5vw solid transparent;
+    border-bottom-color: #fff;
+    transform: translateX(-50%);
+  }
+
+.mr-mums img {
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    margin-top: 8vw;
+    margin-left: 15vw;
+}
+
+
+/* Section begynder her */
+section {
+    margin-top: 10vw;
+}
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5vw;
+}
+
+ul.afhentning {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vw;
+    font-family: 'PT Serif', serif;
+}
+
+.bestil-button {
+    background-color: #D2DCCA;
+    color: #000;
+    border-radius: 8vw;
+    width: 40vw;
+    height: 5vw;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 4vw;
+    font-size: 3vw;
+    border: 0px solid #000;
+    font-family: 'PT Serif', serif;
+}
+
+.bestil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+/* Styling af footer */
+.footer {
+    background-color: #D2DCCA;
+    padding: 40px;
+    text-align: center;
+    color: #4b4c4d;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social a {
+    font-size: 24px;
+    color: #243D20;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.social a:hover {
+    color: grey;
+    opacity: 0.9;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #4b4c4d;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: #f8f6f5;
+}
+
+/* Første breakpoint. Her har vi taget udgangspunkt i en iphone 15 som har målene 393px * 852px. */
+/* Responsive adjustments */
+@media screen and (max-width:393px) {
+
+
+    .forside-billede {
+        margin-top: -15px;
+    }
+        .footer {
+            padding: 20px; 
+            height: auto; 
+            margin: 0 0;
+        }
+    
+        .footer ul {
+            text-align: center;
+        }
+    
+        .footer ul li {
+            display: block;
+            margin: 10px 0;
+        }
+    
+    section {
+        margin-top: 0;
+    }
+
+    .overlay-circle {
+        margin-top: -15px;
+    }
+
+    .overlay-text {
+        margin-top: -15px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+/* Sætter mine elementer til at være lodret, samt rykkes ind i midten */ 
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label.logo{
+        font-size: 5vw;
+        padding-left: 50px;
+}
+
+.checkbtn{
+    display: block;
+    
+}
+.navbar-ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#D2DCCA;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+  }
+  
+
+nav ul li {
+display:block;
+margin: -150px 0px;
+top: -120px;
+line-height: 30px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    display: block;
+    
+}
+a:hover, a.active {
+    background: none;
+    color: black;
+} 
+#check:checked ~ul {
+left: 0
+}
+}
+
+    /* Breakpoint for Ipad skærmstørrelse. Som har målene 1024px * 1366px */ 
+    @media screen and (min-width: 394px) and (max-width: 1024px) {
+    
+
+    .navbar-ul {
+        margin-top: -25px;
+    }
+    /* Ændre på margin her, da min Mr. Mums figur vil overlappe med min afhentning section hvis ikke jeg putter margin på */ 
+    .afhentning {
+        margin: 2vw;
+    }
+    .h3 {
+        margin: 7vw;
+    }
+
+    .afhentning-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul.afhentning {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2vw;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-button {
+        background-color: #D2DCCA;
+        color: #000;
+        border-radius: 4vw;
+        width: 20vw;
+        height: 2.5vw;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 2vw;
+        font-size: 1.5vw;
+        border: 0px solid #000;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    }
+
+
+    /* Breakpoint for Macbook Pro 12-inch skærmstørrelse. Som har målene 2304px * 1310px */ 
+    @media screen and (min-width: 1025px) and (max-width: 2304px) {
+    
+    .mr-mums img {
+        margin-top: 10px;
+    }
+
+    /* Ændre på margin her, da min Mr. Mums figur vil overlappe med min afhentning section hvis ikke jeg putter margin på */ 
+
+    .afhentning-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul.afhentning {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5vw;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-button {
+        background-color: #D2DCCA;
+        color: #000;
+        border-radius: 4vw;
+        width: 20vw;
+        height: 2.5vw;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 2vw;
+        font-size: 1.5vw;
+        border: 0px solid #000;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+
+
+
+    /* Sidste breakpoint, for skærmstørrelser over 2304px */ 
+    @media screen and (min-width: 2305px) {
+
+
+
+    /* Ændre på margin her, da min Mr. Mums figur vil overlappe med min afhentning section hvis ikke jeg putter margin på */ 
+    .afhentning {
+        margin: 2vw;
+    }
+    .h3 {
+        margin-top: 15vw;
+    }
+
+    .afhentning-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul.afhentning {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5vw;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-button {
+        background-color: #D2DCCA;
+        color: #000;
+        border-radius: 4vw;
+        width: 20vw;
+        height: 2.5vw;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 2vw;
+        font-size: 1.5vw;
+        border: 0px solid #000;
+        font-family: 'PT Serif', serif;
+    }
+    
+    .bestil-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mr-mums img {
+        margin-top: 3vw;
+    }
+    }   
